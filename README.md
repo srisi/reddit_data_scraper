@@ -1,4 +1,4 @@
-#Reddit Data Scraper
+# Reddit Data Scraper
 
 This is a simple scraper that uses [pushshift.io](pushshift.io) to download reddit comments into
 a csv file. 

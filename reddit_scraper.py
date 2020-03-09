@@ -5,7 +5,6 @@ import json
 import csv
 from pathlib import Path
 
-
 class RedditScraper:
 
     def __init__(self,
@@ -67,7 +66,6 @@ class RedditScraper:
             name_parts.append(f'{self.start_date}to{self.end_date}')
 
         return "_".join(name_parts)
-
 
     def execute_query_and_store_as_csv(self, output_filename=None):
         """
@@ -160,7 +158,7 @@ class RedditScraper:
         if not filename:
             filename = self.filename
 
-        with open(Path('data', f'{filename}.csv'), 'w', encoding='utf-8') as csvfile:
+        with open(Path('data', f'{filename}.csv'), 'w') as csvfile:
             fieldnames = ['date', 'author', 'subreddit', 'score', 'url', 'text']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()

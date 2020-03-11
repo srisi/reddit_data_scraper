@@ -78,6 +78,8 @@ class RedditScraper:
         documents = self._get_documents(url)
         self._store_documents_to_csv(documents, output_filename)
 
+        print(f'Found {len(documents)} matching your search query.')
+
     def _generate_query_url(self):
         """
         Generates a url to query pushshift.io with the passed parameters
@@ -167,7 +169,8 @@ class RedditScraper:
 
 
 if __name__ == '__main__':
-    r = RedditScraper(search_term='fentanyl', number_of_results=2000, min_score=5,
-                      start_date='2016-01-01')
+    r = RedditScraper(search_term='opioid',
+                      subreddit='kentucky',
+                      number_of_results=2000, min_score=2)
     r.execute_query_and_store_as_csv()
 

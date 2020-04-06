@@ -10,7 +10,7 @@ class RedditScraper:
     def __init__(self,
                search_term=None, subreddit=None, number_of_results=100,
                start_date='1990-01-01', end_date='2030-01-01',
-               min_score=0
+               min_score=0, sort_by='score'
                ):
         """
 
@@ -46,6 +46,7 @@ class RedditScraper:
                 raise ValueError("number_of_results and min_score have to be positive integers.")
         self.number_of_results = number_of_results
         self.min_score = min_score
+        self.sort_by = sort_by
 
     @property
     def filename(self):
@@ -105,6 +106,10 @@ class RedditScraper:
             search_params['after'] = self.start_date_timestamp
         if self.end_date != '2030-01-01':
             search_params['before'] = self.end_date_timestamp
+
+        if self.sort_by:
+            search_params['sort_type'] = self.sort_by
+            search_params['sort'] = 'desc'
 
         url = f'https://api.pushshift.io/reddit/search/?{urllib.parse.urlencode(search_params)}'
 
@@ -169,8 +174,7 @@ class RedditScraper:
 
 
 if __name__ == '__main__':
-    r = RedditScraper(search_term='opioid',
-                      subreddit='kentucky',
+    r = RedditScraper(subreddit='coronavirus',
                       number_of_results=2000, min_score=2)
     r.execute_query_and_store_as_csv()
 

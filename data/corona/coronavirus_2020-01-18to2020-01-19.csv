@@ -1,0 +1,296 @@
+date,author,subreddit,score,url,text
+2020-01-18,VeryScaryTerry,OutOfTheLoop,39,https://www.reddit.com/r/OutOfTheLoop/comments/eqfcpu/whats_going_on_with_the_new_coronavirus_in_china/fetjyjn/,"Answer: This was already kinda answered but I'd like to add more. I just finished my degree in Immunology and Infectious Disease and I spent a couple years working in a virology lab. 
+
+There's multiple ways an old virus can become dangerous again. There's something called genetic drift, where the virus will change slowly over time as it mutates. If it mutates enough, it will appear to be a completely new virus to your immune system and can lead to you getting sick, despite being almost the same virus as before. This is why you have to get a flu shot every year to stay protected. 
+
+There's also genetic shift, which is when the virus changes extremely fast. This is usually caused when a strain of the virus recombines with another strain of the virus, creating a completely new and unique virus. This usually happens inside of an animal. 
+
+In this case, the coronavirus probably underwent genetic shift by recombining with another strain of coronavirus inside an animal. Asian countries are typically known to have poorer health standards when it comes to handling live animals, especially in live animal markets."
+2020-01-18,thehomiemoth,OutOfTheLoop,11,https://www.reddit.com/r/OutOfTheLoop/comments/eqfcpu/whats_going_on_with_the_new_coronavirus_in_china/fetggpr/,"To add on to this, coronavirus is a family single stranded RNA viruses (like rhinovirus, which causes the common cold, and orthomyxovirus which causes influenza). RNA is really supposed to be a short term messenger, not a long term storage system for genetic information the way DNA is. It’s relatively unstable, increasing the mutation rate. So coronavirus would have a high mutation rate compared even to DNA viruses.
+
+
+This is similar to why we need a new influenza vaccine every year, and we have no hepatitis C vaccine"
+2020-01-18,politecranberry,worldnews,6,https://www.reddit.com/r/worldnews/comments/eqqyib/china_reported_17_new_cases_of_the_mysterious/few3i9q/,"Article states that it is version of coronavirus yeah 
+
+Article was published 1/19, amd its still the 18th where I am so Id say its fairly new"
+2020-01-18,Ivacaftor,Virology,3,https://www.reddit.com/r/Virology/comments/eqldqv/with_current_wuhan_coronavirus_outbreak_in_mind/fetpqx8/,"So generally speaking when you think of virus discovery there are 3 major ways that you can do this. The first one is by looking at serology and seeing if there are antibodies that might crossreact with your virus of interest. So you would take a patient's blood and then test the effectiveness of antibodies, which would give you an idea about the family of the virus and what it is similar to (most new viruses are very similar to known viruses, like the Wuhan virus is very similar to SARS for example). A second way that is commonly used is EM. Using EM on a virus particle can help you identify which virus family it is from. Finally, another key way is to do PCR assays set up for the different families. This is how MERS-CoV was first identified for example, where it was positive for a coronavirus specific PCR. This technique relies on conserved sequences that are conserved throughout the whole family of viruses.
+
+Now as for the sequencing of the virus, there are again many different ways that you can do this. Once you know the virus family, you can use primers for the possible genes in conserved regions that just run a PCR and sequence the outcome. This has been applied to highly similar viruses and I presume (I am not sure) this is what was used for the Wuhan virus.
+
+Another common technique that was used for NL63 which is a human coronavirus for example is AFLP. This is a PCR based technique that allows for sequencing relatively random sequences. Finally, another common method is RAP PCR, this technique uses random primers and if you sequence this and have a suitable cut off, you can slowly assemble the viral genome. This was used to identify the sequence of human metapneumovirus for example. 
+
+I have to say, the Wuhan sequence was kinda sloppily done, it actually had a large human sequence that was an artefact from the assembly and it usually takes a few months to get a real ""representable"" sequence for a virus as it is usually initially done on a single virus isolated from a patient. Nevertheless, it is really cool and definitely a field of virology that is quite dope imo.
+
+EDIT: Also, there are probably tons of other ways to do this. Please feel free to add other ways to do this!
+
+Second EDIT: This paper is pretty good and explains more methods and everything in more detail. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4534817/"
+2020-01-18,blood_bag,worldnews,3,https://www.reddit.com/r/worldnews/comments/eqqyib/china_reported_17_new_cases_of_the_mysterious/few4olf/,">    Summary
+
+>We estimate that a total of 1,723 cases of 2019-nCoV in Wuhan City (95% CI: 427 – 4,471) had onset of symptoms by 12th January 2020 (the last reported onset date of any case).
+
+
+>http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/"
+2020-01-18,dreamtofalligators,MoreTankieChapo,2,https://www.reddit.com/r/MoreTankieChapo/comments/eqa289/theyve_cracked_the_code/fetak7n/,"There was a coronavirus outbreak in Wuhan that the BBC is pitching a hysteria-laden fit about, even though China has already identified the source and is working with the WHO to prevent its spread. It's infected a couple hundred people and killed two elderly patients, which are relatively very small numbers. [Click here for FEARMONGERING](https://www.bbc.com/news/health-51148303)"
+2020-01-18,autotldr,worldnews,2,https://www.reddit.com/r/worldnews/comments/eqqyib/china_reported_17_new_cases_of_the_mysterious/few7ivq/,"This is the best tl;dr I could make, [original](https://www.france24.com/en/20200119-china-reports-17-new-cases-of-mystery-virus) reduced by 79%. (I'm a bot)
+*****
+> China reported 17 new cases of the mysterious SARS-like virus on Sunday, including three in a severe condition, heightening fears ahead of China&#039;s Lunar New Year holiday when hundreds of millions of people move around the country.
+
+> The virus - a new strain of coronavirus that humans can contract - has caused alarm because of its connection to SARS, which killed nearly 650 people across mainland China and Hong Kong in 2002-2003.
+
+> Of the 17 new cases in the central city of Wuhan - believed to be the epicentre of the outbreak - three are described as &quot;Severe&quot;.
+
+
+*****
+[**Extended Summary**](http://np.reddit.com/r/autotldr/comments/eqrhp7/china_reported_17_new_cases_of_the_mysterious/) | [FAQ](http://np.reddit.com/r/autotldr/comments/31b9fm/faq_autotldr_bot/ ""Version 2.02, ~459905 tl;drs so far."") | [Feedback](http://np.reddit.com/message/compose?to=%23autotldr ""PM's and comments are monitored, constructive feedback is welcome."") | *Top* *keywords*: **new**^#1 **cases**^#2 **city**^#3 **virus**^#4 **people**^#5"
+2020-01-18,twigboy,australia,2,https://www.reddit.com/r/australia/comments/eqe2im/thunderstorm_risks_mount_as_sydney_dam_dodges/feupv6o/,[that'd be nice](https://www.independent.co.uk/news/world/asia/china-virus-sars-coronavirus-death-pneumonia-thailand-japan-a9288251.html)
+2020-01-18,IcyArmeria,singapore,1,https://www.reddit.com/r/singapore/comments/eqbudp/how_concerned_are_you_about_the_spread_of_the/feq22ke/,"New coronavirus causing atypical pneumonia from Wuhan, China"
+2020-01-18,Comrade_writer,Sino,1,https://www.reddit.com/r/Sino/comments/eq9jx0/i_cannot_begin_to_state_the_racism_fearmongering/feqeoiu/,"> It's a coronavirus, so in the same family as SARS
+
+Which is also the same family as the common cold
+
+I would be more worried about the American flu that have taken the lives of thousands in the most recent season already.
+
+A ""new"" pathogen is dangerous in other ways, mainly because we don't have a high understanding of it. But in this case it doesn't seem to be more severe than pneumonia."
+2020-01-18,autotldr,worldnews,1,https://www.reddit.com/r/worldnews/comments/eqezan/coronavirus_more_cases_and_second_death_reported/feqruhi/,"This is the best tl;dr I could make, [original](https://www.theguardian.com/world/2020/jan/17/corona-second-death-in-china-after-sars-like-outbreak) reduced by 90%. (I'm a bot)
+*****
+> More cases of coronavirus have been confirmed in the Chinese city of Wuhan and a second person has died, according to local authorities.
+
+> Prof Neil Ferguson and colleagues, from the MRC Centre for Global Infectious Disease Analysis at Imperial, calculated that the number of cases in Wuhan may be more than 1,700.
+
+> &quot;It is likely that the Wuhan outbreak of a novel coronavirus has caused substantially more cases of moderate or severe respiratory illness than currently reported,&quot; they said in a report.
+
+
+*****
+[**Extended Summary**](http://np.reddit.com/r/autotldr/comments/eqf3uy/coronavirus_more_cases_and_second_death_reported/) | [FAQ](http://np.reddit.com/r/autotldr/comments/31b9fm/faq_autotldr_bot/ ""Version 2.02, ~459768 tl;drs so far."") | [Feedback](http://np.reddit.com/message/compose?to=%23autotldr ""PM's and comments are monitored, constructive feedback is welcome."") | *Top* *keywords*: **Wuhan**^#1 **case**^#2 **virus**^#3 **people**^#4 **number**^#5"
+2020-01-18,F16KILLER,worldnews,1,https://www.reddit.com/r/worldnews/comments/eq7s7p/the_number_of_people_already_infected_by_the/feqt6kc/,"I actually don't think they are hiding it on purpose, it's just an extremely hard thing to confirm cases of an unknown disease that has similar symptoms to the flu. If this report is correct and faster methods to detect this new coronavirus become available, then we may start seeing dozens of cases being reported by China everyday."
+2020-01-18,GioVoi,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/feqgn08/,"> Severe acute respiratory syndrome (Sars), which is caused by a coronavirus, killed 774 of the 8,098 people infected in an outbreak that started in China in 2002.
+
+Read it again. 
+
+* This virus is a coronavirus
+* SARS was also a coronavirus
+* SARS killed 774 in 2002
+* This is not SARS"
+2020-01-18,mynonymouse,preppers,1,https://www.reddit.com/r/preppers/comments/eqdy8z/should_we_be_worried_about_the_mystery_virus/feriz6f/,"I'm keeping an eye on it, but not overly concerned right now. 
+
+It's a coronavirus, which means it's in the same family as SARS and the common cold. If it spreads like SARS (i.e., not particularly easily) and has a fatality rate like SARS, they'll get it under control. 
+
+My concern is, if it spreads like the common cold, the severity rate varies because reasons, and has a much lower fatality rate, it could be problematic. If the fatality rate is 1% and most of the people with it just look like they have a bad cold, it will be a lot harder to tackle and could get out of control."
+2020-01-18,abillionbells,OutOfTheLoop,1,https://www.reddit.com/r/OutOfTheLoop/comments/eqfcpu/whats_going_on_with_the_new_coronavirus_in_china/ferkuge/,"They ate them. Since you were curious enough to read a thread about the new coronavirus, most 'new' viruses spread from animals to humans through contact like bites, exposure to waste, or by eating them. Zoonotic viruses like these are almost impossible to get rid of because there's always more animals to catch it from."
+2020-01-18,ZergAreGMO,ID_News,1,https://www.reddit.com/r/ID_News/comments/eqi2vz/the_number_of_people_already_infected_by_the/fesan03/,"Primary source [here](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/):
+
+>>We estimate that a total of 1,723 cases of 2019-nCoV in Wuhan City (95% CI: 427 – 4,471) had onset of symptoms by 12th January 2020 (the last reported onset date of any case).
+
+Which is in stark contrast to the ~50 confirmed cases so far."
+2020-01-18,Rando_2401,preppers,1,https://www.reddit.com/r/preppers/comments/eqf4b7/is_it_possible_to_protect_oneself_from_a_viral/fetpyjd/,"No theyre blowing it out of proportion.  Around 40+ people have been infected that we know and of those only two have died and they were in their 60s.  The CDC says it’s a coronavirus but doesn’t spread very easily like SARS which spread through contact, the people who treated the infected patients didn’t even get infected by this new virus.  At the most I’d say wear a mask and wash your hands and carry sanitizer."
+2020-01-18,EggsAndMilquetoast,explainlikeimfive,1,https://www.reddit.com/r/explainlikeimfive/comments/eqk02k/eli5_why_is_a_virus_that_has_only_killed_two/fet5ing/,"I'm assuming you're talking about the coronavirus from China, and it's world news because no pandemic ever started out looking like it was going to be a world-wide problem...until it was. Air travel has made novel, airborne diseases an enormous threat, not just hypothetically, but demonstrably. We don't necessarily know that this new coronavirus spreads person to person, but we don't know much about it at all and that's a bit of a problem if we want to avoid more deaths. 
+
+And just because it has ""only"" killed two people, more than a dozen others have been hospitalized. Also, hypothetically speaking, only 41 cases have been identified, which means that the deaths of 2 people mean this virus has a fatality rate of about 1 in 20. Could there be other undiagnosed cases we don't actually know about? Almost certainly. But could there also be other unexplained deaths from this disease that were written off as something else? Yeah."
+2020-01-18,[deleted],worldnews,1,https://www.reddit.com/r/worldnews/comments/eq7s7p/the_number_of_people_already_infected_by_the/fetb6v3/,"Is it true that the common cold is a type of coronavirus, that is just very mild?"
+2020-01-18,speqtral,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/fepm7c8/,"The virus I'm concerned most concerned about these days is yellow peril disease, which has resurfaced in recent years. It's known for ravaging the brains of victims and causing mass hysteria over everyday things, like coronavirus. It affects the frontal lobe most prominently, interfering with things like critical thinking, reasoning, and reading comprehension. Those suffering from it are especially vulnerable to suggestion and manipulation."
+2020-01-18,tekdemon,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/fepr75r/,"While statistics aren’t necessarily reliable the Chinese government actually has a pretty good track record in combating infectious diseases. TB and various STDs used to run super rampant in China but they were very aggressive about vaccinating and treating and got things very well controlled. In the modern era they’ve been less good about HIV control due to social stigmas, but for something like this coronavirus I would expect aggressive quarantines to get this under control quickly."
+2020-01-18,fortniteinfinitedab,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/fept661/,Isn't coronavirus just the common cold tho? How do you die from that lmao
+2020-01-18,fijimermaidsg,singapore,1,https://www.reddit.com/r/singapore/comments/eqbudp/how_concerned_are_you_about_the_spread_of_the/fetdkvh/,"I lived through SARs 2003 as an adult, it was NOT fun. I know we've had other scares on different viruses (bird flue etc), but this is a coronavirus. I have a feeling that the numbers are being under-reported. It's wet and cold now - perfect weather for spreading viruses.
+
+Wait and see lor... in the meantime, lo hei like there's no tomorrow.
+
+&#x200B;
+
+New Chinese virus 'will have infected hundreds': [https://www.bbc.com/news/health-51148303](https://www.bbc.com/news/health-51148303)"
+2020-01-18,autotldr,worldnews,1,https://www.reddit.com/r/worldnews/comments/eqexhw/china_reports_new_wuhan_virus_cases_ahead_of_key/feqrvai/,"This is the best tl;dr I could make, [original](https://in.reuters.com/article/china-health-pneumonia/china-reports-new-wuhan-virus-cases-ahead-of-key-holiday-idINKBN1ZH01Q) reduced by 76%. (I'm a bot)
+*****
+> BEIJING - China reported four more cases of pneumonia believed to be caused by a new coronavirus strain, causing rising concern globally that a disease health officials do not yet fully understand could spread during a key holiday period.
+
+> Though experts say the new virus does not appear to be as lethal as SARS, there is little known about its origins and how easily it can spread. Thailand and Japan have confirmed new cases of the virus earlier this week, stoking worries globally as many of the 1.4 billion Chinese people will travel abroad during the Lunar New Year holidays that begin next week.
+
+> The Wuhan Municipal Health Commission said on Saturday the four new individuals diagnosed with the new virus are in stable condition, adding it has confirmed 45 cases in the city as of Thursday.
+
+
+*****
+[**Extended Summary**](http://np.reddit.com/r/autotldr/comments/eqf3wj/china_reports_new_wuhan_virus_cases_ahead_of_key/) | [FAQ](http://np.reddit.com/r/autotldr/comments/31b9fm/faq_autotldr_bot/ ""Version 2.02, ~459769 tl;drs so far."") | [Feedback](http://np.reddit.com/message/compose?to=%23autotldr ""PM's and comments are monitored, constructive feedback is welcome."") | *Top* *keywords*: **new**^#1 **virus**^#2 **Wuhan**^#3 **health**^#4 **cases**^#5"
+2020-01-18,Pibrac,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/feqvu8a/,"Don't need to panic I think. 
+
+It's a coronavirus closely related to SARS. 
+
+SARS and flu has pretty much the same risk and same death rate. So if influenza (flu) doesn't worry you you shouldn't really worry."
+2020-01-18,hiddenuser12345,worldnews,1,https://www.reddit.com/r/worldnews/comments/epwwbu/hong_kong_student_who_helped_found_volunteer/feuix4e/,"Yep, in China right now and reporting on HK protests is basically ""it's a warzone down there and it's all those rioters' fault!""And I saw basically nothing being reported about the new coronavirus going around until less than a week ago."
+2020-01-18,GauMatri,newsNepal,1,https://www.reddit.com/r/newsNepal/comments/eqfpsb/४_मघ_२०७६_शनवर_बलकक_०६_००/fer53wp/,"China reports new Wuhan virus cases ahead of key holiday
+* [Link](https://thehimalayantimes.com/lifestyle/health/china-reports-new-wuhan-virus-cases-ahead-of-key-holiday/)
+
+* Summary: <p>Chinese health authorities said on Saturday they had discovered four more cases of pneumonia following an outbreak of what is believed to be a new coronavirus strain in the central city of Wuhan, raising concerns that the disease could spread further.</p>
+<p>The post <a rel=""nofollow"" href=""https://thehimalayantimes.com/lifestyle/health/china-reports-new-wuhan-virus-cases-ahead-of-key-holiday/"">China reports new Wuhan virus cases ahead of key holiday</a> appeared first on <a rel=""nofollow"" href=""https://thehimalayantimes.com"">The Himalayan Times</a>.</p>
+
+* Description: [VIEW SOURCE](https://thehimalayantimes.com/lifestyle/health/china-reports-new-wuhan-virus-cases-ahead-of-key-holiday/)"
+2020-01-18,sovietskaya,worldnews,1,https://www.reddit.com/r/worldnews/comments/eqf8xt/china_population_now_over_14_billion_as_birthrate/ferl1d9/,maybe the recent outbreak of coronavirus is a symptom of too much people there.
+2020-01-18,zerosixhundred,dankmemes,1,https://www.reddit.com/r/dankmemes/comments/eqf4vk/i_have_a_bad_feeling_about_this/fermg46/,"**Coronavirus infects hundreds**  
+
+
+Coronavirus has infected hundreds in China, increasing the chance that an infected person will infect an healthy person. Keep evolving your disease!"
+2020-01-18,autotldr,worldnews,1,https://www.reddit.com/r/worldnews/comments/eqggu4/experts_warn_over_scale_of_china_virus_as_us/fernlc1/,"This is the best tl;dr I could make, [original](https://www.afp.com/en/news/3954/experts-warn-over-scale-china-virus-us-airports-start-screening-doc-1nv4jd1) reduced by 84%. (I'm a bot)
+*****
+> The true scale of the outbreak of a mysterious SARS-like virus in China is likely far bigger than officially reported, scientists have warned, as countries ramp up measures to prevent the disease from spreading.
+
+> The US said from Friday it would begin screening flights arriving from Wuhan at San Francisco airport and New York&#039;s JFK - which both receive direct flights - as well as Los Angeles, where many flights connect.
+
+> After the death was reported, online discussion spread in China over the severity of the Wuhan coronavirus - and how much information the government may be hiding from the public.
+
+
+*****
+[**Extended Summary**](http://np.reddit.com/r/autotldr/comments/eqgq2a/experts_warn_over_scale_of_china_virus_as_us/) | [FAQ](http://np.reddit.com/r/autotldr/comments/31b9fm/faq_autotldr_bot/ ""Version 2.02, ~459794 tl;drs so far."") | [Feedback](http://np.reddit.com/message/compose?to=%23autotldr ""PM's and comments are monitored, constructive feedback is welcome."") | *Top* *keywords*: **Wuhan**^#1 **case**^#2 **China**^#3 **report**^#4 **people**^#5"
+2020-01-18,SunshinyJuzez,OutOfTheLoop,1,https://www.reddit.com/r/OutOfTheLoop/comments/eqfcpu/whats_going_on_with_the_new_coronavirus_in_china/fewcnfd/,"But what makes it different from the coronavirus strain from 6 years ago? The one where a quick Google search says it originated from the Middle East? 
+
+As the media portrays them the same..."
+2020-01-18,KillMeFastOrSlow,aznidentity,1,https://www.reddit.com/r/aznidentity/comments/eqe92e/pure_yellow_peril_propaganda/fes23wf/,"Coronavirus means the common cold, but when we have it it has to be played up to seem evil. Also notice how something Chinese spreading to japan is seen as a threat because it’s spreading to a democratic u.s. aligned country."
+2020-01-18,HeartyBeast,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/ferjbls/,"You didn’t answer my question. What is sensationalist about this story *now*? The story reports a novel coronavirus, no apparent human-to-human infection yet, but research that suggests that the numbers of infected are likely to be high her than the official figures."
+2020-01-18,AyeAyeTeeBuoy,AskReddit,1,https://www.reddit.com/r/AskReddit/comments/eqj1yc/which_event_will_be_the_first_one_in_the_race_of/fesq313/,"https://www.nytimes.com/2020/01/17/health/china-coronavirus-airport-screening.html
+But no human transmission so probably not dangerous"
+2020-01-18,LegitosaurusRex,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/feq2nrq/,"SARS is pretty bad though, and it's more similar to SARS than any other coronavirus."
+2020-01-18,Xx_JUAN_TACO_xX,TopMindsOfReddit,1,https://www.reddit.com/r/TopMindsOfReddit/comments/eqbrdq/top_minds_think_its_racist_to_say_a_disease/feqcijp/,"Read the comments out of curiosity. A lot of them are clearly exaggerating, but in a way the article does sound a little like fear mongering.  
+I found this comment that seems to explain their point of view in a more level headed manner  
+  
+>It's a coronavirus, so in the same family as SARS. But it doesn't seem to as deadly, and most patients report pretty mild symptom, much milder than SARS. The two people that died were old and one of them suffered from severe liver damage due to drinking. 
+The World Health Organization has literally praised China's openness and response to the virus. There are literally samples of the virus in labs all over the world. 
+The BBC article is just fearmongering. China's health services have proven pretty capable in suppressing new outbreaks of diseases. 
+The China of nowadays is no longer the China of 2003."
+2020-01-18,blowtorchma,HongKong,1,https://www.reddit.com/r/HongKong/comments/eqeclc/sars_20_i_am_super_worried_hows_the_situation_now/feqb67c/,"The number of people already infected by the mystery virus emerging in China is far greater than official figures suggest, scientists have told the BBC. 
+There have been nearly 50 confirmed cases of the new virus, but UK experts estimate the figure is closer to 1,700.
+Two people are known to have died from the respiratory illness, which appeared in Wuhan city in December. 
+""I am substantially more concerned than I was a week ago,"" disease outbreak scientist, Prof Neil Ferguson, said.
+The work was conducted by the MRC Centre for Global Infectious Disease Analysis at Imperial College London, which advises bodies including the UK government and the World Health Organization.
+■   'Sars-family' virus claims second victim in China
+■   Mystery Chinese virus: How worried should we be?
+Singapore and Hong Kong have been screening air passengers from Wuhan and US authorities announced similar measures starting on Friday at three major airports in San Francisco, Los Angeles and New York.
+How were the numbers calculated?
+The crucial clue to the scale of the problem lies in the cases being detected in other countries.
+While the outbreak is centred on the central Chinese city of Wuhan, there have been two cases in Thailand and one in Japan. 
+""That caused me to worry,"" said Prof Ferguson.
+He added: ""For Wuhan to have exported three cases to other countries would imply there would have to be many more cases than have been reported.""
+It is impossible to get the precise number, but outbreak modelling, which is based on the virus, the local population and flight data, can give an idea. 
+Wuhan International Airport serves a population of 19 million people, but only 3,400 a day travel internationally.
+The detailed calculations, which have been posted online ahead of publication in a scientific journal, came up with a figure of 1,700 cases. 
+What does it all mean?
+Prof Ferguson said it is ""too early to be alarmist"" but he was ""substantially more concerned"" than a week ago.
+Chinese officials say there have been no cases of the virus spreading from one person to another. 
+Instead they say the virus has crossed the species barrier and come from infected animals at a seafood and wildlife market in Wuhan. 
+Prof Ferguson argues: ""People should be considering the possibility of substantial human-to-human transmission more seriously than they have so far.
+""It would be unlikely in my mind, given what we know about coronaviruses, to have animal exposure be the principal cause of such a number of human infections."" 
+Understanding how a novel virus is spreading is a crucial part of assessing its threat. 
+What is this virus?
+Viral samples have been taken from patients and analysed in the laboratory.
+And officials in China and the World Health Organization have concluded the infection is a coronavirus.
+Coronaviruses are a broad family of viruses, but only six (the new one would make it seven) are known to infect people. 
+At the mild end they cause the common cold, but severe acute respiratory syndrome (Sars) is a coronavirus that killed 774 of the 8,098 people infected in an outbreak that started in China in 2002.
+Analysis of the genetic code of the new virus shows it is more closely related to Sars than any other human coronavirus. 
+The virus has caused pneumonia in some patients and been fatal in two of them.
+What do other experts say?
+Dr Jeremy Farrar, director of the Wellcome medical research charity, said: ""There is more to come from this epidemic.
+""Uncertainty and gaps remain, but it's clear that there is some level of person-to-person transmission. 
+""We are starting to hear of more cases in China and other countries and it is likely, as this modelling shows, that there will be many more cases, in a number of countries.""
+Prof Jonathan Ball, from the University of Nottingham, said: ""What's really important is until there has been widespread laboratory testing it is very difficult to put a real number on the cases out there. 
+""But this is a figure we should take seriously until we know otherwise, 41 animal-to-human 'spillovers' is stretching it a bit and there probably is more underlying infection than has been detected so far.""
+Follow James on Twitter."
+2020-01-18,baron_eh,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/feqgomi/,[WHO gets confirmation from Japanese Health Ministry of 2019-nCoV](https://www.who.int/csr/don/16-january-2020-novel-coronavirus-japan-ex-china/en/)
+2020-01-18,SolusOpes,preppers,1,https://www.reddit.com/r/preppers/comments/eqf4b7/is_it_possible_to_protect_oneself_from_a_viral/fer7rtc/,"It's *just* a coronavirus.
+
+So how did you protect yourself when SARS was the big scare?
+
+Do that again. Because it's just a SARS mutation."
+2020-01-18,TheChinaWatcher,China,1,https://www.reddit.com/r/China/comments/eqc6wp/bbc_the_number_of_people_already_infected_by_the/fesrmf8/,"Because, the Thailand Case was directly from Wuhan.
+
+> The case is a 61-year-old Chinese woman **living in Wuhan City**, Hubei Province, China. On 5 January 2020, she developed fever with chills, sore throat and headache. On 8 January 2020, she took a direct flight to Thailand from Wuhan City together with five family members in a tour group of 16 people.
+
+> The patient’s full exposure history is under investigation. **She reported a history of visiting a local fresh market in Wuhan on regular basis prior to the onset of illness on 5 January 2020**; however, she did not report visiting the Huanan South China Seafood Market from where most of the cases were detected. 
+
+> https://www.who.int/csr/don/14-january-2020-novel-coronavirus-thailand-ex-china/en/
+
+All the cases originate in Wuhan with common theme being fish markets. There is limited evidence of huma-to-human transmission. The BBC Article is taking things way out of context."
+2020-01-18,autotldr,worldnews,1,https://www.reddit.com/r/worldnews/comments/eqfk0f/china_reports_4_more_cases_in_viral_pneumonia/fercxx2/,"This is the best tl;dr I could make, [original](https://www.sfgate.com/news/medical/article/China-reports-4-more-cases-in-viral-pneumonia-14985549.php) reduced by 72%. (I'm a bot)
+*****
+> BEIJING - Four more cases have been identified in a viral pneumonia outbreak in the central Chinese city of Wuhan that has killed two people and prompted countries as far away as the United States to take precautionary measures.
+
+> Health authorities are keen to avoid a repeat of SARS, or severe acute respiratory syndrome, another coronavirus that started in southern China in late 2002 and spread to more than two dozen countries, killing nearly 800 people.
+
+> Doctors began seeing a new type of viral pneumonia - fever, cough, difficulty breathing - in people who worked at or visited a food market in the suburbs of Wuhan late last month.
+
+
+*****
+[**Extended Summary**](http://np.reddit.com/r/autotldr/comments/eqg46j/china_reports_4_more_cases_in_viral_pneumonia/) | [FAQ](http://np.reddit.com/r/autotldr/comments/31b9fm/faq_autotldr_bot/ ""Version 2.02, ~459784 tl;drs so far."") | [Feedback](http://np.reddit.com/message/compose?to=%23autotldr ""PM's and comments are monitored, constructive feedback is welcome."") | *Top* *keywords*: **people**^#1 **Wuhan**^#2 **Health**^#3 **cases**^#4 **pneumonia**^#5"
+2020-01-18,Lookismer,collapse,1,https://www.reddit.com/r/collapse/comments/eqjyav/a_mysterious_and_deadly_virus_from_china_could/fet3f5f/,Original source http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/
+2020-01-18,redesoul7,saraba2nd,1,https://www.reddit.com/r/saraba2nd/comments/eqfkm4/外國研究推測截至1月12日武漢約有1700宗病例/ferzp2u/,"南华早报说深圳和上海都有
+However, three separate sources have told the South China Morning Post that at least two suspected cases have been reported in the south China city of Shenzhen, and a third in Shanghai, in the east of the country.
+
+来源 https://www.scmp.com/news/china/society/article/3046681/china-coronavirus-least-three-suspected-cases-found-shenzhen"
+2020-01-18,GeorgeShadows,worldnews,1,https://www.reddit.com/r/worldnews/comments/eqmcm7/czechs_detect_bird_flu_as_new_europe_outbreak/fevdh53/,"The one in china is a type of coronavirus, bird flu is a type of influenza."
+2020-01-18,autotldr,worldnews,1,https://www.reddit.com/r/worldnews/comments/eqbyl8/deadly_mystery_virus_spreads_outside_china_to_new/feplnqr/,"This is the best tl;dr I could make, [original](https://gizmodo.com/mystery-virus-spreads-to-new-countries-outside-china-1841057194) reduced by 84%. (I'm a bot)
+*****
+> Officials in Thailand first identified the new virus in the country on January 13 and announced a second case today.
+
+> The illness is a coronavirus, part of a large family of viruses that can cause symptoms ranging from that of a common cold to Severe Acute Respiratory Syndrome, more commonly known as SARS. The new 2019-nCoV presents as having pneumonia-like symptoms and 41 people have tested positive for the virus so far, with five people still in critical condition from &quot;Severe infections.""
+
+> Health officials believe that the new virus can only be transmitted from animals to human and that the Huanan Wholesale Seafood Market in Wuhan, which sells live animals, may be the culprit.
+
+
+*****
+[**Extended Summary**](http://np.reddit.com/r/autotldr/comments/eqc5wh/deadly_mystery_virus_spreads_outside_china_to_new/) | [FAQ](http://np.reddit.com/r/autotldr/comments/31b9fm/faq_autotldr_bot/ ""Version 2.02, ~459711 tl;drs so far."") | [Feedback](http://np.reddit.com/message/compose?to=%23autotldr ""PM's and comments are monitored, constructive feedback is welcome."") | *Top* *keywords*: **virus**^#1 **new**^#2 **Health**^#3 **Market**^#4 **Wuhan**^#5"
+2020-01-18,1832jsh,HongKong,1,https://www.reddit.com/r/HongKong/comments/eqeclc/sars_20_i_am_super_worried_hows_the_situation_now/feqbffy/,"Well, from what I can gather, it’s a reasonably isolated incident. 
+
+For more information refer to:
+
+
+https://www.cdc.gov/coronavirus/2019-ncov/index.html
+
+
+https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/"
+2020-01-18,1832jsh,HongKong,1,https://www.reddit.com/r/HongKong/comments/eqeclc/sars_20_i_am_super_worried_hows_the_situation_now/feqaqs4/,Are you referring to the Coronavirus in Wuhan?
+2020-01-18,WikiTextBot,MoreTankieChapo,1,https://www.reddit.com/r/MoreTankieChapo/comments/eqa289/theyve_cracked_the_code/feqdmll/,"**2019–20 outbreak of novel coronavirus (2019-nCoV)**
+
+The 2019 – 2020 China pneumonia outbreak, also known as Wuhan pneumonia (Chinese: 武漢肺炎; pinyin: Wǔhàn fèiyán) began in mid-December 2019 in the city of Wuhan in central China, as an emerging cluster of people with pneumonia of unknown cause, linked primarily to stallholders who worked at the Huanan Seafood Market (華南海鮮市場), which sold live animals. Chinese scientists subsequently isolated a new coronavirus, the 2019-nCoV, which has been found to be at least 70% similar in genetic sequence to SARS-CoV, and later mapped and made available its gene sequence.The first suspected cases were reported on 31 December 2019, with the first symptoms appearing just over three weeks earlier on 8 December 2019. The market was closed off on 1 January 2020, those affected were isolated, and over 700 close contacts, including more than 400 healthcare workers were subsequently monitored. With the development of a specific diagnostic PCR test for detecting the infection, the presence of 2019-nCoV was then confirmed in 41 people in the Wuhan cluster, of which two were later reported to be a married couple, one of whom had not been to the market, and another three who were members of the same family that worked at the market's seafood stalls.
+
+***
+
+^[ [^PM](https://www.reddit.com/message/compose?to=kittens_from_space) ^| [^Exclude ^me](https://reddit.com/message/compose?to=WikiTextBot&message=Excludeme&subject=Excludeme) ^| [^Exclude ^from ^subreddit](https://np.reddit.com/r/MoreTankieChapo/about/banned) ^| [^FAQ ^/ ^Information](https://np.reddit.com/r/WikiTextBot/wiki/index) ^| [^Source](https://github.com/kittenswolf/WikiTextBot)   ^]
+^Downvote ^to ^remove ^| ^v0.28"
+2020-01-18,itsveronicalodge,news,1,https://www.reddit.com/r/news/comments/eq7htg/the_number_of_people_already_infected_by_the/feqeump/,"It’s a new virus within the coronavirus family, most closely resembling SaRS (also a coronovirus)"
+2020-01-18,GauMatri,newsNepal,1,https://www.reddit.com/r/newsNepal/comments/eqow42/५_मघ_२०७६_आइतवर_बहनक_०६_००/fev56bf/,"China reports new Wuhan virus cases ahead of key holiday
+* [Link](https://thehimalayantimes.com/lifestyle/health/china-reports-new-wuhan-virus-cases-ahead-of-key-holiday/)
+
+* Summary: <p>Chinese health authorities said on Saturday they had discovered four more cases of pneumonia following an outbreak of what is believed to be a new coronavirus strain in the central city of Wuhan, raising concerns that the disease could spread further.</p>
+<p>The post <a rel=""nofollow"" href=""https://thehimalayantimes.com/lifestyle/health/china-reports-new-wuhan-virus-cases-ahead-of-key-holiday/"">China reports new Wuhan virus cases ahead of key holiday</a> appeared first on <a rel=""nofollow"" href=""https://thehimalayantimes.com"">The Himalayan Times</a>.</p>
+
+* Description: [VIEW SOURCE](https://thehimalayantimes.com/lifestyle/health/china-reports-new-wuhan-virus-cases-ahead-of-key-holiday/)"
+2020-01-18,F6_GS,worldnews,1,https://www.reddit.com/r/worldnews/comments/eq7s7p/the_number_of_people_already_infected_by_the/fetrkis/,World war z (2006) could well have been inspired by the last time a pneumonia-inducing coronavirus outbreak was covered up by China (SARS in 2003)
+2020-01-18,-IntoTheVoid-,China,1,https://www.reddit.com/r/China/comments/eqdujb/report_over_1700_infected_with_chinese_virus/feqliug/,"Primary source: [http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/)
+
+**Summary**
+
+We estimate that a total of 1,723 cases of 2019-nCoV in Wuhan City (95% CI: 427 – 4,471) had onset of symptoms by 12th January 2020 (the last reported onset date of any case).
+
+This estimate is based on the following assumptions:
+
+* Wuhan International Airport has a catchment population of 19 million individuals \[1\].
+* There is a mean 10-day delay between infection and detection, comprising a 5-6 day incubation period \[8,9\]  and a 4-5 day delay from symptom onset to detection/hospitalisation of a case (the cases detected in Thailand and Japan were hospitalised 3 and 7 days after onset, respectively) \[4,10\].
+* Total volume of international travel from Wuhan over the last two months has been 3,301 passengers per day. This estimate is derived from the 3,418 foreign passengers per day in the top 20 country destinations based on 2018 IATA data \[11\], and uses 2016 IATA data held by Imperial College to correct for the travel surge at Chinese New Year present in the latter data (which has not happened yet this year) and for travel to countries outside the top 20 destination list.
+
+**Caveats**
+
+1. We assume that outbound trip durations are long enough that an infected Wuhan resident travelling internationally will develop symptoms and be detected overseas, rather than being detected after returning to Wuhan. We also do not account for the fact that international visitors to Wuhan (such as the case who was detected in Japan) might be expected to have a shorter duration of exposure and thus a lower infection risk than residents. Accounting for either factor correctly requires additional data but would increase our estimate of the total number of cases.
+2. We estimate the potential number of symptomatic cases with disease severity of a level requiring hospitalisation (both the cases detected in Thailand and Japan were moderately severe). Our estimates do not include cases with mild or no symptoms.
+3. The incubation period of 2019-nCov is not known and has been approximated with the estimates obtained for MERS-CoV and SARS \[8,9\].
+4. We assume that international travel is independent of the risk of exposure to 2019n-CoV or of infection status. If zoonotic exposure was biased towards wealthier people, travel frequency may be correlated with exposure. Also, some travel might be causally linked to infection status (to seek healthcare overseas) or the infection status of contacts in Wuhan (this may apply to the case detected in Japan) \[10\]. Accounting for either association would increase the probability of a case travelling and therefore reduce our estimates of the total number of cases."
+2020-01-18,trentn2,MoreTankieChapo,1,https://www.reddit.com/r/MoreTankieChapo/comments/eqa289/theyve_cracked_the_code/feqgvf0/,"lol fake news has been circulating as if Wuhan is in literal bio warfare right now.
+
+Seriously though, this is a new type of coronavirus. The authorities are working on it and publishing results along the way."
+2020-01-18,wakeup2019,Sino,1,https://www.reddit.com/r/Sino/comments/eqlgnt/bbc_fearmongers_that_china_is_suppressing_the/fewfp3r/,"Virus mutates all the time. The flu virus is new every year
+
+But ... it is a “coronavirus,” which is in the family of SARS viruses. So, there’s some justification for being prudent. But the hysteria has a lot of racism behind it. You just have to read the comments on social media"
+2020-01-18,autotldr,worldnews,0,https://www.reddit.com/r/worldnews/comments/eqloi3/china_reports_new_virus_cases_raising_concern/fetyg56/,"This is the best tl;dr I could make, [original](https://www.reuters.com/article/us-china-health-pneumonia/china-reports-new-virus-cases-raising-concern-globally-before-key-holiday-idUSKBN1ZH020) reduced by 76%. (I'm a bot)
+*****
+> BEIJING - China reported four more cases of pneumonia believed to be caused by a new coronavirus strain, causing rising concern globally that a disease health officials do not yet fully understand could spread during a key holiday period.
+
+> Though experts say the new virus does not appear to be as lethal as SARS, there is little known about its origins and how easily it can spread. Thailand and Japan have confirmed new cases of the virus earlier this week, stoking worries globally as many of the 1.4 billion Chinese people will travel abroad during the Lunar New Year holidays that begin next week.
+
+> The Wuhan Municipal Health Commission said on Saturday the four new individuals diagnosed with the new virus are in stable condition, adding it has confirmed 45 cases in the city as of Thursday.
+
+
+*****
+[**Extended Summary**](http://np.reddit.com/r/autotldr/comments/eqma9w/china_reports_new_virus_cases_raising_concern/) | [FAQ](http://np.reddit.com/r/autotldr/comments/31b9fm/faq_autotldr_bot/ ""Version 2.02, ~459878 tl;drs so far."") | [Feedback](http://np.reddit.com/message/compose?to=%23autotldr ""PM's and comments are monitored, constructive feedback is welcome."") | *Top* *keywords*: **new**^#1 **virus**^#2 **Wuhan**^#3 **health**^#4 **cases**^#5"

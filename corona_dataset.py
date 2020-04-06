@@ -102,9 +102,9 @@ class CoronaDataset:
             sample = sorted(comments_matching_criteria,
                             key=lambda x: x['score'], reverse=True)[:number_of_comments]
 
-        if len(sample) < number_of_comments:
-            print(f"Warning! Could only find {len(sample)} documents rather than the "
-                  f"{number_of_comments} requested.")
+        # if len(sample) < number_of_comments:
+        #     print(f"Warning! Could only find {len(sample)} documents rather than the "
+        #           f"{number_of_comments} requested.")
 
         return sample
 

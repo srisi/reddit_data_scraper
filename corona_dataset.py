@@ -2,6 +2,7 @@ from pathlib import Path
 
 from IPython import embed
 import csv
+import re
 
 import random
 # set random seed so that we can randomly select documents but will always
@@ -47,7 +48,9 @@ class CoronaDataset:
             end_date='2020-04-04',
             number_of_comments=1000,
             minimum_number_of_words_per_comment=10,
-            select_by='random'
+            select_by='random',
+            must_include_terms: list=None,
+            must_exclude_terms: list=None
     ):
         """
         Select a sample of the data from start to end date
@@ -79,6 +82,12 @@ class CoronaDataset:
         >>> highest_scoring['text']
         'Huh. How’d you miss that one, Brian?\n\nBecause I knew that. And I’m not the governor of an entire state.'
 
+        # get comments mentioning washington
+        >>> washington_sample = dataset.get_data_sample(must_include_terms=['washington'],
+        ...                                             select_by='score')
+        >>> washington_sample[2]['text']
+        "I know it's because of the lack of testing, but fucking hell the mortality rate in Washington"
+
         """
 
         if select_by not in {'random', 'score'}:
@@ -86,10 +95,32 @@ class CoronaDataset:
 
         comments_matching_criteria = []
         for comment in self.data:
-            comment_length = len(comment['text'].split())
+
+            text = comment['text'].lower()
+            tokenized_text = re.findall(r'\b\w\w+\b', text)
+
+            all_terms_found = True
+            if must_include_terms:
+                must_include_terms = [term.lower() for term in must_include_terms]
+                for term in must_include_terms:
+                    if term not in tokenized_text:
+                        all_terms_found = False
+                        break
+
+            excluded_terms_found = False
+            if must_exclude_terms:
+                must_exclude_terms = [term.lower() for term in must_exclude_terms]
+
+                for term in must_exclude_terms:
+                    if term in tokenized_text:
+                        excluded_terms_found = True
+                        break
+
             if (
                 start_date <= comment['date'] <= end_date and
-                comment_length >= minimum_number_of_words_per_comment
+                len(tokenized_text) >= minimum_number_of_words_per_comment and
+                all_terms_found and
+                excluded_terms_found is False
             ):
                 comments_matching_criteria.append(comment)
 
@@ -113,4 +144,13 @@ class CoronaDataset:
 
 if __name__ == '__main__':
     c = CoronaDataset()
-    sample = c.get_data_sample()
+
+    print(len(c.get_data_sample(number_of_comments=1000000)))
+
+    sample = c.get_data_sample(must_include_terms=['washington'], number_of_comments=1000000)
+    print(len(sample))
+    print(sample[0]['text'])
+    samp = c.get_data_sample(must_exclude_terms=['washington'], number_of_comments=1000000)
+    print(len(samp))
+    print(samp[0]['text'])
+

@@ -46,7 +46,7 @@ class CoronaDataset:
             self,
             start_date='2020-01-01',
             end_date='2020-04-04',
-            number_of_comments=1000,
+            number_of_comments=1000000,
             minimum_number_of_words_per_comment=10,
             select_by='random',
             must_include_terms: list=None,

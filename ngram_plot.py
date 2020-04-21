@@ -40,11 +40,11 @@ def create_ngram_plot(term, display_mode='counts'):
     plt.show()
 
 
-def store_ngram_data_in_csv(term, filename):
+def store_ngram_data_in_csv(terms, filename):
     """
     Instead of plotting ngram data, stores it in a csv
 
-    :param term:
+    :param terms: list
     :param filename:
     :param display_mode:
     :return:
@@ -53,41 +53,41 @@ def store_ngram_data_in_csv(term, filename):
     if not filename.endswith('.csv'):
         raise ValueError("data will be written in csv format, so the filename has to end in "
                          "'.csv'.")
-
-    # get data to display and average it
-    # counts
-    search_term_counts_by_day = get_daily_counts_of_search_term(term)
-    search_term_counts_by_day = get_moving_averaged_data(search_term_counts_by_day,
-                                 number_of_days_to_average_on_each_side=3)
-    # frequencies
-    search_term_frequencies_by_day = get_daily_frequencies_of_search_term(term)
-    search_term_frequencies_by_day = get_moving_averaged_data(search_term_frequencies_by_day,
-                                  number_of_days_to_average_on_each_side=3)
+    if not isinstance(terms, list):
+        raise ValueError("terms should be a list of search strings")
 
     # get list of dates for x-axis labels
     dates = get_all_days_between_start_date_and_end_date()
 
-    # throw an error if the number of daily counts we have doesn't equal the number of dates
-    assert len(search_term_counts_by_day) == len(dates)
+    output_data = []
+    for date in dates:
+        output_data.append({'date': date})
+
+    for term in terms:
+        # get data to display and average it
+        search_term_counts_by_day = get_daily_counts_of_search_term(term)
+        search_term_counts_by_day = get_moving_averaged_data(search_term_counts_by_day,
+                                 number_of_days_to_average_on_each_side=3)
+        # throw an error if the number of daily counts we have doesn't equal the number of dates
+        assert len(search_term_counts_by_day) == len(dates)
+        for idx, count in enumerate(search_term_counts_by_day):
+            output_data[idx][term] = count
 
     # finally, write this data to disk as a csv file (which is very similar to an excel file.
     # we are writing the data as two columns, one for dates and one for counts.
-    # so we are writing "date", "count", "frequency" in the first row. the following rows are
-    # actual data, eg. "2020-01-05", 0, 0.0
+    # so we are writing "date", "covid", "wuhan virus" (or more/other terms in the first row.
+    # the following rows are actual data, eg. "2020-01-05", 0, 0
     # csv stands for "Comma-separated values", i.e. the different values (or columns) are separated
     # by commas
     # operating with the csv is a bit ... janky. Generally, the documentation gives you good
     # patterns to just copy: https://docs.python.org/3/library/csv.html
     with open(filename, 'w', encoding='utf-8') as csvfile:
-        csv_writer = csv.writer(csvfile)
-        # write the header
-        csv_writer.writerow(['date', 'count', 'frequency'])
-        # write all data rows
-        for i in range(len(search_term_counts_by_day)):
-            csv_writer.writerow([dates[i],
-                                 search_term_counts_by_day[i],
-                                 search_term_frequencies_by_day[i]])
 
+        fieldnames = output_data[0].keys()
+        csv_writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        csv_writer.writeheader()
+        for row in output_data:
+            csv_writer.writerow(row)
 
 
 def get_daily_counts_of_search_term(term):
@@ -119,11 +119,17 @@ def get_daily_counts_of_search_term(term):
             tokenized_text = re.findall(r'\b\w\w+\b', text)
 
             # iterate over all words...
-            for word in tokenized_text:
+            for idx, word in enumerate(tokenized_text):
                 # ... and if it is the word that we're looking for,
                 # increment the count by one
+
                 if word == term:
                     day_count_of_searchterm += 1
+
+                if len(term.split()) == 2 and idx < len(tokenized_text) - 1:
+                    next_word = tokenized_text[idx + 1]
+                    if word == term.split()[0] and next_word == term.split()[1]:
+                        day_count_of_searchterm += 1
 
         # at the end of each day, add the count to our search_term_counts_by_day list
         search_term_counts_by_day.append(day_count_of_searchterm)
@@ -226,4 +232,4 @@ def get_moving_averaged_data(data, number_of_days_to_average_on_each_side=3):
 
 if __name__ == '__main__':
     # create_ngram_plot('covid')
-    store_ngram_data_in_csv('covid', 'covid.csv')
+    store_ngram_data_in_csv(['covid', 'wuhan virus', 'china virus'], 'corona_names.csv')

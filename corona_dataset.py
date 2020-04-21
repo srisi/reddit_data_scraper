@@ -40,6 +40,7 @@ class CoronaDataset:
                 for row in reader:
                     row['score'] = int(row['score'])
                     data.append(row)
+        data = sorted(data, key=lambda x:x['date'])
         return data
 
     def get_data_sample(
@@ -96,29 +97,39 @@ class CoronaDataset:
         comments_matching_criteria = []
         for comment in self.data:
 
-            text = comment['text'].lower()
-            tokenized_text = re.findall(r'\b\w\w+\b', text)
+            if comment['date'] < start_date:
+                continue
+            if end_date < comment['date']:
+                break
 
-            all_terms_found = True
-            if must_include_terms:
-                must_include_terms = [term.lower() for term in must_include_terms]
-                for term in must_include_terms:
-                    if term not in tokenized_text:
-                        all_terms_found = False
-                        break
+            if must_include_terms or must_exclude_terms:
+                text = comment['text'].lower()
+                tokenized_text = re.findall(r'\b\w\w+\b', text)
 
-            excluded_terms_found = False
-            if must_exclude_terms:
-                must_exclude_terms = [term.lower() for term in must_exclude_terms]
+                all_terms_found = True
+                if must_include_terms:
+                    must_include_terms = [term.lower() for term in must_include_terms]
+                    for term in must_include_terms:
+                        if term not in tokenized_text:
+                            all_terms_found = False
+                            break
 
-                for term in must_exclude_terms:
-                    if term in tokenized_text:
-                        excluded_terms_found = True
-                        break
+                excluded_terms_found = False
+                if must_exclude_terms:
+                    must_exclude_terms = [term.lower() for term in must_exclude_terms]
+
+                    for term in must_exclude_terms:
+                        if term in tokenized_text:
+                            excluded_terms_found = True
+                            break
+
+            else:
+                all_terms_found = True
+                excluded_terms_found = False
+
 
             if (
-                start_date <= comment['date'] <= end_date and
-                len(tokenized_text) >= minimum_number_of_words_per_comment and
+                len(comment['text'].split()) >= minimum_number_of_words_per_comment and
                 all_terms_found and
                 excluded_terms_found is False
             ):
@@ -132,10 +143,6 @@ class CoronaDataset:
         else:
             sample = sorted(comments_matching_criteria,
                             key=lambda x: x['score'], reverse=True)[:number_of_comments]
-
-        # if len(sample) < number_of_comments:
-        #     print(f"Warning! Could only find {len(sample)} documents rather than the "
-        #           f"{number_of_comments} requested.")
 
         return sample
 

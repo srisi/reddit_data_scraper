@@ -19,7 +19,7 @@ def get_daily_corona_data():
     """
 
     current_date = date(2020, 1, 1)
-    end_date = date(2020, 4, 5)
+    end_date = date(2020, 4, 21)
 
     # iterate over all days from the start date (= current_date) as long as current_date + 1 day
     # is less than the end date
@@ -35,11 +35,14 @@ def get_daily_corona_data():
             search_term = None
             subreddit = 'coronavirus'
 
+        search_term = 'coronavirus'
+        subreddit = None
+
         r = RedditScraper(
             subreddit=subreddit, search_term=search_term,
             # end date is current day + 24 hours
             start_date=str(current_date), end_date=str(current_date + timedelta(days=1)),
-            number_of_results=1000, min_score=0, sort_by='score'
+            number_of_results=2000, min_score=0, sort_by='score'
         )
         r.execute_query_and_store_as_csv()
 

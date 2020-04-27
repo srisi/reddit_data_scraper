@@ -5,9 +5,13 @@ from reddit_scraper import RedditScraper
 
 from datetime import date, timedelta
 
+from IPython import embed
+from pathlib import Path
+
+import csv
 import time
 
-def get_daily_corona_data():
+def get_daily_corona_data(search_term, subreddit, filename):
     """
     Get the 1000 highest scoring comments from reddit for each day from 2020-01-01 to 2020-04-04
 
@@ -19,24 +23,13 @@ def get_daily_corona_data():
     """
 
     current_date = date(2020, 1, 1)
-    end_date = date(2020, 4, 21)
+    end_date = date(2020, 4, 26)
+    documents = []
 
     # iterate over all days from the start date (= current_date) as long as current_date + 1 day
     # is less than the end date
     while current_date + timedelta(days=1) <= end_date:
 
-        # before 01-24, search for mentions of "coronavirus" across reddit
-        if current_date < date(2020, 1, 24):
-            search_term = 'coronavirus'
-            subreddit = None
-
-        # after 01-24, look for comments in r/coronavirus
-        else:
-            search_term = None
-            subreddit = 'coronavirus'
-
-        search_term = 'coronavirus'
-        subreddit = None
 
         r = RedditScraper(
             subreddit=subreddit, search_term=search_term,
@@ -44,12 +37,31 @@ def get_daily_corona_data():
             start_date=str(current_date), end_date=str(current_date + timedelta(days=1)),
             number_of_results=2000, min_score=0, sort_by='score'
         )
-        r.execute_query_and_store_as_csv()
+        url = r._generate_query_url()
+        documents += r._get_documents(url)
+
+        print(len(documents))
 
         print(current_date)
         current_date += timedelta(days=1)
         time.sleep(1)
 
+    filepath = Path(f'data/{filename}')
+    with open(filepath, 'w') as csvfile:
+        fieldnames = ['date', 'author', 'subreddit', 'score', 'url', 'text']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for doc in documents:
+            writer.writerow(doc)
+
 
 if __name__ == '__main__':
-    get_daily_corona_data()
+    # time.sleep(1200)
+    get_daily_corona_data(subreddit=None, search_term='coronavirus',
+                          filename='all_subreddits.csv')
+    # time.sleep(1200)
+    # get_daily_corona_data(subreddit='coronavirus', search_term=None,
+    #                       filename='coronavirus.csv')
+    # time.sleep(1200)
+    # get_daily_corona_data(subreddit='china_flu', search_term=None,
+    #                       filename='china_flu.csv')

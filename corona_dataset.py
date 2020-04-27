@@ -3,6 +3,7 @@ from pathlib import Path
 from IPython import embed
 import csv
 import re
+import urllib.request
 
 import random
 # set random seed so that we can randomly select documents but will always
@@ -11,12 +12,34 @@ random.seed(0)
 
 class CoronaDataset:
 
-    def __init__(self):
+    def __init__(self, dataset_name='all_subreddits'):
+        """
+        :param dataset_name: str. name of the dataset to load
 
+        # by default, the all subreddits dataset is loaded, which contains the highest
+        # rated datasets across reddit
+        >>> c = CoronaDataset()
 
+        # executing this command uses the default dataset_name "all_subreddits".
+        # it is equivalent to
+        >>> c = CoronaDataset(dataset_name='all_subreddits')
+
+        # there are two other datasets available.
+        # 1) only comments from the china_flu subreddit
+        >>> c = CoronaDataset(dataset_name='china_flu')
+
+        # 2) only comments from the coronavirus subreddit
+        >>> c = CoronaDataset(dataset_name='coronavirus')
+
+        """
+        valid_dataset_names = {'all_subreddits', 'china_flu', 'coronavirus'}
+        if not dataset_name in valid_dataset_names:
+            raise ValueError(f'dataset_name {dataset_name}. is not valid. '
+                             f'valid dataset names: :{valid_dataset_names}')
+
+        self.dataset_name = dataset_name
         self.data = self.load_corona_data()
-        print(f"Loaded Coronavirus reddit dataset with {len(self.data)} comments.")
-
+        print(f"Loaded {self.dataset_name} dataset with {len(self.data)} comments.")
 
     def load_corona_data(self):
         """
@@ -33,14 +56,23 @@ class CoronaDataset:
         :return:
         """
 
+        file_path = Path('data', f'{self.dataset_name}.csv')
+
+        # if file not locally available, download it
+        if not file_path.exists():
+            url = f'https://corona-datasets.s3-us-west-2.amazonaws.com/{self.dataset_name}.csv'
+            file_content = urllib.request.urlopen(url).read().decode('utf-8')
+            with open(file_path, 'w') as outfile:
+                outfile.write(file_content)
+
         data = []
-        for filepath in Path('data', 'corona').iterdir():
-            with open(filepath) as infile:
-                reader = csv.DictReader(infile)
-                for row in reader:
-                    row['score'] = int(row['score'])
-                    data.append(row)
-        data = sorted(data, key=lambda x:x['date'])
+        with open(file_path) as infile:
+            reader = csv.DictReader(infile)
+            for row in reader:
+                row['score'] = int(row['score'])
+                data.append(row)
+
+        data = sorted(data, key=lambda x: x['date'])
         return data
 
     def get_data_sample(
@@ -150,7 +182,12 @@ class CoronaDataset:
 
 
 if __name__ == '__main__':
-    c = CoronaDataset()
+
+    c = CoronaDataset(dataset_name='china_flu')
+    c = CoronaDataset(dataset_name='all_subreddits')
+    c = CoronaDataset(dataset_name='coronavirus')
+
+    embed()
 
     print(len(c.get_data_sample(number_of_comments=1000000)))
 
